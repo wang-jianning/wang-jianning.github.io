@@ -1,55 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jianning Wang</title>
-  <meta name="description" content="Jianning Wang's academic website.">
-  <style>
-    body {
-      margin: 0;
-      background: #fafaf8;
-      color: #263238;
-      font-family: Georgia, serif;
-      line-height: 1.7;
-    }
-    main {
-      max-width: 720px;
-      margin: 12vh auto;
-      padding: 0 24px;
-    }
-    h1 {
-      margin-bottom: 0;
-      font-size: clamp(36px, 7vw, 48px);
-      font-weight: normal;
-    }
-    .subtitle { color: #657078; }
-    section { margin-top: 48px; }
-    h2 { font-size: 24px; font-weight: normal; }
-    footer {
-      margin-top: 72px;
-      color: #657078;
-      font-size: 14px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Jianning Wang, mathematics undergraduate at Nanyang Technological University. Research interests in financial mathematics, machine learning, reinforcement learning, and quantum algorithms.">
+<meta name="theme-color" content="#f8f7f3">
+<title>Jianning Wang | Mathematics &amp; Research</title>
+<style>
+:root{color-scheme:light;--ink:#202d36;--muted:#56656e;--accent:#205d64;--line:#dcded8;--paper:#f8f7f3}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.8 Georgia,"Times New Roman",serif}
+a{color:var(--accent);text-underline-offset:4px}a:hover{text-decoration-thickness:2px}a:focus-visible{outline:3px solid var(--accent);outline-offset:5px}
+.skip{position:absolute;left:16px;top:-70px;background:white;padding:8px 16px}.skip:focus{top:16px}
+.wrap{max-width:1040px;margin:auto;padding:0 40px}
+nav{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:27px 0;border-bottom:1px solid var(--line);font:13px/1.6 system-ui,sans-serif}
+nav .brand{font-weight:650;letter-spacing:.08em;color:var(--ink);text-decoration:none}
+nav .links{display:flex;gap:25px}
+nav .links a{text-decoration:none}
+header{padding:76px 0 56px;max-width:820px}
+.eyebrow{font:12px/1.6 system-ui,sans-serif;text-transform:uppercase;letter-spacing:.17em;color:var(--accent);margin:0 0 18px}
+h1{font-size:clamp(42px,7vw,66px);line-height:1.15;font-weight:400;letter-spacing:-.04em;margin:0 0 12px}
+.chinese{font:24px/1.6 system-ui,sans-serif;color:var(--muted);margin:0 0 25px}
+.affiliation{font:15px/1.8 system-ui,sans-serif;color:var(--muted);margin:0}
+.contact-links{display:flex;flex-wrap:wrap;gap:12px 24px;font:14px/1.7 system-ui,sans-serif;margin-top:26px}
+section{display:grid;grid-template-columns:190px minmax(0,1fr);gap:38px;padding:36px 0;border-top:1px solid var(--line)}
+h2{font:600 13px/1.6 system-ui,sans-serif;letter-spacing:.09em;text-transform:uppercase;margin:5px 0;color:var(--accent)}
+p{margin:0 0 18px}section p:last-child{margin-bottom:0}
+.interests{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:10px}
+.interests li{border:1px solid var(--line);padding:5px 13px;border-radius:3px;font:14px/1.8 system-ui,sans-serif}
+h3{font-size:23px;line-height:1.4;font-weight:400;margin:0 0 12px}
+h3 a{color:var(--ink);text-decoration:none}h3 a:hover{text-decoration:underline}
+.authors,.paper-meta{font:14px/1.8 system-ui,sans-serif;color:var(--muted);margin:0 0 10px}
+.paper-links{display:flex;gap:24px;font:14px/1.7 system-ui,sans-serif;margin-top:18px}
+.contact-email{overflow-wrap:anywhere}
+footer{padding:30px 0 40px;border-top:1px solid var(--line);margin-top:20px;font:12px/1.8 system-ui,sans-serif;color:var(--muted);display:flex;justify-content:space-between;gap:16px}
+@media(max-width:650px){.wrap{padding:0 23px}nav{align-items:flex-start;flex-wrap:wrap}.links{gap:20px!important}header{padding:48px 0 38px}section{grid-template-columns:1fr;gap:18px;padding:28px 0}h3{font-size:21px}footer{flex-direction:column;gap:0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
 </head>
 <body>
-  <main>
-    <h1>Jianning Wang</h1>
-    <p class="subtitle">Academic Website</p>
-
-    <section>
-      <h2>About</h2>
-      <p>Welcome to my academic website.
-         More information will be added soon.</p>
-    </section>
-
-    <section>
-      <h2>Research</h2>
-      <p>Research projects and papers will be listed here.</p>
-    </section>
-
-    <footer>© Jianning Wang</footer>
-  </main>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+<nav aria-label="Main navigation">
+<a class="brand" href="#main">JIANNING WANG</a>
+<div class="links"><a href="#about">About</a><a href="#research">Research</a><a href="#contact">Contact</a></div>
+</nav>
+<main id="main">
+<header>
+<p class="eyebrow">Mathematics · Nanyang Technological University</p>
+<h1>Jianning Wang</h1>
+<p class="chinese" lang="zh-Hans">王健宁</p>
+<p class="affiliation">Undergraduate Student, Mathematics<br>School of Physical and Mathematical Sciences<br>Nanyang Technological University, Singapore</p>
+<div class="contact-links"><a href="mailto:JWANG106@e.ntu.edu.sg">Email</a><a href="https://orcid.org/0009-0006-5578-9936" rel="me">ORCID</a><a href="https://arxiv.org/abs/2610.13126">arXiv paper</a></div>
+</header>
+<section id="about"><h2>About</h2><div>
+<p>I am an undergraduate student in Mathematics at the School of Physical and Mathematical Sciences, Nanyang Technological University.</p>
+<p>My research interests include financial mathematics, machine learning and reinforcement learning, and quantum algorithms.</p>
+</div></section>
+<section aria-labelledby="interests-title"><h2 id="interests-title">Research interests</h2><ul class="interests"><li>Financial Mathematics</li><li>Machine Learning</li><li>Reinforcement Learning</li><li>Quantum Algorithms</li></ul></section>
+<section id="research"><h2>Research</h2><article>
+<h3><a href="https://arxiv.org/abs/2610.13126">MLP-Initialized Reinforcement Learning for Exit Timing in SPX Short-Straddle Portfolios</a></h3>
+<p class="authors"><strong>Jianning Wang</strong>, Robert Ślepaczuk, and Paweł Sakowski</p>
+<p class="paper-meta">2026 · arXiv:2610.13126</p>
+<p>A two-stage framework combining supervised learning and reinforcement learning to study exit timing in SPX short-straddle portfolios.</p>
+<div class="paper-links"><a href="https://arxiv.org/abs/2610.13126">View on arXiv ↗</a><a href="https://arxiv.org/pdf/2610.13126">PDF ↗</a></div>
+</article></section>
+<section id="contact"><h2>Contact</h2><div>
+<p class="contact-email"><a href="mailto:JWANG106@e.ntu.edu.sg">JWANG106@e.ntu.edu.sg</a></p>
+<p><a href="https://orcid.org/0009-0006-5578-9936" rel="me">ORCID: 0009-0006-5578-9936</a></p>
+</div></section>
+</main>
+<footer><span>© 2026 Jianning Wang</span><span>Nanyang Technological University · Singapore</span></footer>
+</div>
 </body>
 </html>
