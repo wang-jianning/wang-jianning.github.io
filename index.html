@@ -32,7 +32,7 @@ h3{font-size:23px;line-height:1.4;font-weight:400;margin:0 0 12px}
 h3 a{color:var(--ink);text-decoration:none}h3 a:hover{text-decoration:underline}
 .authors,.paper-meta{font:14px/1.8 system-ui,sans-serif;color:var(--muted);margin:0 0 10px}
 .paper-links{display:flex;flex-wrap:wrap;gap:12px 24px;font:14px/1.7 system-ui,sans-serif;margin-top:18px}
-.contact-email{overflow-wrap:anywhere}
+.contact-email{overflow-wrap:anywhere}.research-entry + .research-entry{margin-top:32px}.research-entry h3{font-size:21px}
 footer{padding:30px 0 40px;border-top:1px solid var(--line);margin-top:20px;font:12px/1.8 system-ui,sans-serif;color:var(--muted);display:flex;justify-content:space-between;gap:16px}
 @media(max-width:650px){.wrap{padding:0 23px}nav{align-items:flex-start;flex-wrap:wrap}.links{gap:20px!important}header{padding:48px 0 38px;grid-template-columns:1fr;gap:28px}.portrait{width:180px;height:180px}section{grid-template-columns:1fr;gap:18px;padding:28px 0}h3{font-size:21px}footer{flex-direction:column;gap:0}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
@@ -58,7 +58,7 @@ footer{padding:30px 0 40px;border-top:1px solid var(--line);margin-top:20px;font
 </header>
 <section id="about"><h2>About</h2><div>
 <p>I am an undergraduate student in Mathematics at the School of Physical and Mathematical Sciences, Nanyang Technological University.</p>
-<p>My research interests include financial mathematics, machine learning and reinforcement learning, and quantum algorithms.</p>
+<p>My research interests include financial mathematics, machine learning and reinforcement learning, and quantum algorithms. My recent work studies learning-based exit decisions for option portfolios and market-regime-aware trading policies.</p>
 </div></section>
 <section aria-labelledby="interests-title"><h2 id="interests-title">Research interests</h2><ul class="interests"><li>Financial Mathematics</li><li>Machine Learning</li><li>Reinforcement Learning</li><li>Quantum Algorithms</li></ul></section>
 <section id="education"><h2>Education</h2><div>
@@ -74,8 +74,29 @@ footer{padding:30px 0 40px;border-top:1px solid var(--line);margin-top:20px;font
 <p class="authors"><strong>Jianning Wang</strong>, Robert Ślepaczuk, and Paweł Sakowski</p>
 <p class="paper-meta">Accepted at ACM ICAIF 2026 · arXiv:2610.13126</p>
 <p>A two-stage framework combining supervised learning and reinforcement learning to study exit timing in SPX short-straddle portfolios.</p>
-<div class="paper-links"><a href="https://doi.org/10.1145/3858063.3858801">ACM DOI ↗</a><a href="https://arxiv.org/abs/2610.13126">View on arXiv ↗</a><a href="https://arxiv.org/pdf/2610.13126">PDF ↗</a></div>
+<div class="paper-links"><a href="https://doi.org/10.1145/3858063.3858801">ACM DOI ↗</a><a href="https://arxiv.org/abs/2610.13126">View on arXiv ↗</a><a href="https://arxiv.org/pdf/2610.13126">PDF ↗</a><a href="assets/research/ICAIF-2026-Poster.pdf" type="application/pdf">Poster (PDF) ↗</a></div>
 </article></section>
+<section id="experience"><h2>Research experience</h2><div>
+<article class="research-entry"><h3>University of Warsaw</h3>
+<p class="paper-meta">Visiting Researcher · May – August 2026</p>
+<p>I developed an MLP-initialized reinforcement learning framework for exit timing in SPX short-straddle portfolios, accounting for transaction costs and execution constraints. My work included oracle-label construction, supervised pretraining, reinforcement learning fine-tuning, and portfolio backtesting.</p>
+<p>This work led to our paper accepted at ACM ICAIF 2026.</p>
+</article>
+<article class="research-entry"><h3>Nanyang Technological University</h3>
+<p class="paper-meta">Regime-aware reinforcement learning for quantitative trading · August 2025 – July 2026</p>
+<p>I designed a framework combining Hidden Markov Models with a Mixture-of-Experts approach to adapt trading strategies to market regimes. I used technical features from DJI30 constituents for regime detection and evaluated PPO, A2C, DDPG, TD3, and SAC under portfolio constraints.</p>
+</article>
+</div></section>
+<section id="projects"><h2>Selected projects</h2><div>
+<article class="research-entry"><h3>Quantum autoencoder for fraud detection</h3>
+<p class="paper-meta">QAI Ventures Hackathon · Top 10 finalist · October 2025</p>
+<p>Developed a four-qubit quantum autoencoder for unsupervised credit-card fraud detection. The pipeline combines PCA, amplitude encoding, and reconstruction fidelity as an anomaly score, with an evaluation AUC of 0.9456.</p>
+</article>
+<article class="research-entry"><h3>Statistical arbitrage in MA–EG futures</h3>
+<p class="paper-meta">Quantitative research project · October – November 2025</p>
+<p>Built a backtesting framework for methanol (MA) and ethylene glycol (EG) futures, including continuous-contract alignment, rolling-correlation filters, ATR-based risk-parity sizing, and slippage modeling. A triple-stochastic Stress Indicator identifies extreme spread deviations and potential mean-reversion entries.</p>
+</article>
+</div></section>
 <section id="cv"><h2>Curriculum vitae</h2><div>
 <p>My full CV is available in English and Chinese.</p>
 <div class="paper-links"><a href="assets/cv/Jianning-Wang-CV-English.pdf" type="application/pdf" download>English CV (PDF) ↓</a><a href="assets/cv/Jianning-Wang-CV-Chinese.pdf" type="application/pdf" download>中文简历 (PDF) ↓</a></div>
